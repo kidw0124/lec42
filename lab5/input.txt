@@ -1,0 +1,8 @@
+E TR
+R +TR
+R
+T FL
+L *FL
+L
+F (E)
+F a

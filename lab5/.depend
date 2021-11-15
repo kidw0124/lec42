@@ -1,0 +1,4 @@
+main.o: main.cpp Parser.h Prod.h Set.h
+Set.o: Set.cpp Set.h
+Prod.o: Prod.cpp Prod.h Set.h
+Parser.o: Parser.cpp Parser.h Prod.h Set.h
