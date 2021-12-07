@@ -1,0 +1,22 @@
+push v		push constant value v onto the stack
+rvalue l	push contents of data location l
+lvalue l	push address of data location l
+pop		discard value on top of the stack
+:=		the r-value on top is placed in the l-value below it and both are popped
+copy		push a copy of the top value on the stack
++		add value on top with value below it pop both and push result
+-		subtract value on top from value below it pop both and push result
+*, /, %		ditto for other arithmetic operations
+==, !=		ditto for relational operations
+<=, <, >=, >	ditto for relational operations
+&, |, ^		ditto for logical operations
+~		invert value on top
+label l		label instruction with l
+goto l		jump to instruction labeled l
+gofalse l	pop the top value, if zero then jump to l
+gotrue l	pop the top value, if nonzero then jump to l
+halt		stop execution
+jsr l		jump to subroutine labeled l, push return address
+return		pop return address and return to caller
+print l		print contents of data location l
+#		comment (any characters after # are ignored until the end of the line) 
