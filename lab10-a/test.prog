@@ -1,0 +1,5 @@
+a := 0
+if a!=0 then a := 1
+print a
+if a==0 then a := 2
+print a
