@@ -13,7 +13,7 @@
 %%
 [ \t]		; // ignore all whitespace
 "print"		{return T_PRINT;}
-"if"	{return T_IF;}
+"if"		{return T_IF;}
 "then"		{return T_THEN;}
 [0-9]+		{yylval.num = atoi(yytext); return T_NUM;}
 [A-Za-z]([A-Za-z]|[0-9])*	{strcpy(yylval.name, yytext); return T_ID;}
